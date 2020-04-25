@@ -1,8 +1,9 @@
 {
   "name": "nomnoml-watch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Automatically watch and compile nomnoml files.",
   "main": "nomnoml-watch.js",
+  "bin": "nomnoml-watch.js",
   "dependencies": {
     "chokidar": "^3.3.1",
     "nomnoml": "^0.6.2"

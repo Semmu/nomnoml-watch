@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const chokidar = require('chokidar');
 
 // One-liner for current directory
