@@ -1,6 +1,6 @@
 {
   "name": "nomnoml-watch",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Automatically watch and compile nomnoml files.",
   "main": "nomnoml-watch.js",
   "bin": "nomnoml-watch.js",
