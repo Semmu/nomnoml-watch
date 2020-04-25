@@ -1,0 +1,16 @@
+{
+  "name": "nomnoml-watch",
+  "version": "0.0.1",
+  "description": "Automatically watch and compile nomnoml files.",
+  "main": "nomnoml-watch.js",
+  "dependencies": {
+    "chokidar": "^3.3.1",
+    "nomnoml": "^0.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node nomnoml-watch.js"
+  },
+  "author": "Semmu",
+  "license": "ISC"
+}
