@@ -13,5 +13,5 @@
     "start": "node nomnoml-watch.js"
   },
   "author": "Semmu",
-  "license": "ISC"
+  "license": "MIT"
 }
