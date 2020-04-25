@@ -1,6 +1,6 @@
 {
   "name": "nomnoml-watch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically watch and compile nomnoml files.",
   "main": "nomnoml-watch.js",
   "bin": "nomnoml-watch.js",
@@ -14,5 +14,6 @@
     "start": "node nomnoml-watch.js"
   },
   "author": "Semmu",
+  "repository": "github:Semmu/nomnoml-watch",
   "license": "MIT"
 }
