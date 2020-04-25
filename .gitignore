@@ -221,3 +221,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows,sublimetext,visualstudiocode
+
+# for testing purposes i have some *.nomnoml files here
+*.nomnoml
+*.svg
