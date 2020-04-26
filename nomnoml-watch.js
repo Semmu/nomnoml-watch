@@ -22,8 +22,8 @@ function read_file(filename, depth) {
   try {
     const contents = fs
       .readFileSync(filename, { encoding: 'utf8' })
-      .replace(/(.*)#import:(.*)/g, function (_, _, file_to_import) {
-        return read_file(path.dirname(filename) + '/' + file_to_import.trim(), depth + 1);
+      .replace(/\s*#import:\s*([a-zA-Z0-9._-]*)(.*)/g, function (_, file_to_import, after_import_text) {
+        return '\n' + read_file(path.dirname(filename) + '/' + file_to_import, depth + 1) + after_import_text;
     });
 
     console.log(color.green(`[depth=${depth}] Successfully read file '${absolute_path}'.`));
