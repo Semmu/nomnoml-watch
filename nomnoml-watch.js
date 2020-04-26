@@ -1,9 +1,10 @@
 #!/usr/bin/env node
+
 const fs = require('fs')
 const path = require('path');
 const nomnoml = require('nomnoml');
 const chokidar = require('chokidar');
-const color = require('cli-color');
+const colors = require('colors');
 
 // max import depth in nomnoml files
 const MAX_IMPORT_DEPTH = 20 // 20 should be enough i guess
@@ -13,7 +14,7 @@ function read_file(filename, depth) {
   console.log(`[depth=${depth}] Reading file '${absolute_path}'...`);
 
   if (depth >= MAX_IMPORT_DEPTH) {
-    console.error(color.red(`[depth=${depth}] Maximum import depth reached, can't read file '${absolute_path}'!`));
+    console.error(`[depth=${depth}] Maximum import depth reached, can't read file '${absolute_path}'!`.red);
     return `#.nomnomlwatchmaxdepth: fill=orange visual=end
       [<nomnomlwatchmaxdepth> -]
     `;
@@ -26,12 +27,12 @@ function read_file(filename, depth) {
         return '\n' + read_file(path.dirname(filename) + '/' + file_to_import, depth + 1) + after_import_text;
     });
 
-    console.log(color.green(`[depth=${depth}] Successfully read file '${absolute_path}'.`));
+    console.log(`[depth=${depth}] Successfully read file '${absolute_path}'.`.green);
     return contents;
 
   } catch (e) {
 
-    console.log(color.red(`[depth=${depth}] Error while reading file '${absolute_path}'!`));
+    console.log(`[depth=${depth}] Error while reading file '${absolute_path}'!`.red);
     return `#.nomnomlwatchreaderror: fill=red visual=end
       [<nomnomlwatchreaderror> -]
     `;
@@ -39,17 +40,19 @@ function read_file(filename, depth) {
   }
 }
 
+console.log('nomnoml-watch started, press Ctrl+C to exit...'.green);
+
 chokidar.watch('*.nomnoml').on('all', (event, filename) => {
   if (['add', 'change'].includes(event)) {
     const absolute_path = path.resolve(filename);
     const output_filename = filename.split('.').slice(0, -1).join('.') + '.svg';
 
-    console.log(`\nRendering file '${absolute_path}'...`);
+    console.log(`\nRendering file '${absolute_path}'...`.cyan);
     try {
       fs.writeFileSync(output_filename, nomnoml.renderSvg(read_file(absolute_path, 0)));
-      console.log(color.green(`Successfully rendered file '${absolute_path}'!`));
+      console.log(`Successfully rendered file '${absolute_path}'!`.green);
     } catch (e) {
-      console.log(color.green(`Error while rendering file '${absolute_path}'!`));
+      console.log(`Error while rendering file '${absolute_path}'!`.red);
     }
   }
 });
