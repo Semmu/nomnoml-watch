@@ -19,6 +19,15 @@
 * run `npx nomnoml-watch`
 
 
+## Troubleshooting
+
+If you encounter issues, watch the command line output while `nomnoml-watch` is running.
+
+If you have import issues, you may have reached the import depth limit, resulting in an orange "end" visual, or the imported file is not found, resulting in a red "end" visual. Check the [`tests/`](tests/) folder for some examples.
+
+Other rendering issues should be reported to the original nomnoml project here: https://github.com/skanaar/nomnoml/issues
+
+
 ## License
 
 MIT
