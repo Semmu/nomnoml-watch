@@ -1,0 +1,70 @@
+<svg version="1.1" baseProfile="full" width="619" height="714" viewbox="0 0 619 714" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="font-weight:bold; font-size:12pt; font-family:'Calibri', Helvetica, sans-serif;;stroke-width:3;stroke-linejoin:round;stroke-linecap:round">
+  <title >nomnoml</title>
+  <desc >[ Exhibit A | Import with whitespaces everywhere. |
+[ a block ]
+]
+
+[ Exhibit A ]-&gt;[ Exhibit B ]
+
+[ Exhibit B | Import without whitespaces anywhere. |
+[ a block ]
+]
+
+[ Exhibit B ]-&gt;[ Exhibit C ]
+
+[ Exhibit C | Import with additional stuff after it on the same line. |
+[ a block ] |
+    The pipe character is on the same line as the import,
+    should result in a horizontal line above this sentence.
+]
+
+[ Exhibit C ]-&gt;[ Exhibit D ]
+
+[ Exhibit D |
+[ This nomnoml file has no .nomnoml extension |
+    Useful if you only want to include them in other diagrams,
+    but don&apos;t want to generate separate diagrams for them.
+] |
+    Here we import a file with no .nomnoml extension.
+]</desc>
+  <path d="M310 132.5 L310 152.5 L310 172.5 L310 172.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M304.7 159.2 L310 165.8 L315.3 159.2 L310 172.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M310 291.5 L310 311.5 L310 331.5 L310 331.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M304.7 318.2 L310 324.8 L315.3 318.2 L310 331.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M310 496.5 L310 516.5 L310 536.5 L310 536.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M304.7 523.2 L310 529.8 L315.3 523.2 L310 536.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <rect x="40.5" y="331.5" height="165" width="539" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="310" y="353" style="fill: #33322E;text-anchor: middle;">Exhibit C</text>
+  <path d="M40.5 362.5 L579.5 362.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <text x="48.5" y="384" style="fill: #33322E;font-weight:normal;">Import with additional stuff after it on the same line.</text>
+  <path d="M40.5 393.5 L579.5 393.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <rect x="53.5" y="406.5" height="31" width="83" style="stroke:#33322E;fill:#fdf6e3;stroke-dasharray:none;"></rect>
+  <text x="95" y="428" style="fill: #33322E;text-anchor: middle;">a block</text>
+  <path d="M40.5 450.5 L579.5 450.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <text x="48.5" y="472" style="fill: #33322E;font-weight:normal;">The pipe character is on the same line as the import,</text>
+  <text x="48.5" y="487" style="fill: #33322E;font-weight:normal;">should result in a horizontal line above this sentence.</text>
+  <rect x="135.5" y="13.5" height="119" width="349" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="310" y="35" style="fill: #33322E;text-anchor: middle;">Exhibit A</text>
+  <path d="M135.5 44.5 L484.5 44.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <text x="143.5" y="66" style="fill: #33322E;font-weight:normal;">Import with whitespaces everywhere.</text>
+  <path d="M135.5 75.5 L484.5 75.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <rect x="148.5" y="88.5" height="31" width="83" style="stroke:#33322E;fill:#fdf6e3;stroke-dasharray:none;"></rect>
+  <text x="190" y="110" style="fill: #33322E;text-anchor: middle;">a block</text>
+  <rect x="131.5" y="172.5" height="119" width="358" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="310.5" y="194" style="fill: #33322E;text-anchor: middle;">Exhibit B</text>
+  <path d="M131.5 203.5 L489.5 203.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <text x="139.5" y="225" style="fill: #33322E;font-weight:normal;">Import without whitespaces anywhere.</text>
+  <path d="M131.5 234.5 L489.5 234.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <rect x="144.5" y="247.5" height="31" width="83" style="stroke:#33322E;fill:#fdf6e3;stroke-dasharray:none;"></rect>
+  <text x="186" y="269" style="fill: #33322E;text-anchor: middle;">a block</text>
+  <rect x="13.5" y="536.5" height="165" width="593" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="310" y="558" style="fill: #33322E;text-anchor: middle;">Exhibit D</text>
+  <path d="M13.5 567.5 L606.5 567.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <rect x="26.5" y="580.5" height="77" width="567" style="stroke:#33322E;fill:#fdf6e3;stroke-dasharray:none;"></rect>
+  <text x="310" y="602" style="fill: #33322E;text-anchor: middle;">This nomnoml file has no .nomnoml extension</text>
+  <path d="M26.5 611.5 L593.5 611.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <text x="34.5" y="633" style="fill: #33322E;font-weight:normal;">Useful if you only want to include them in other diagrams,</text>
+  <text x="34.5" y="648" style="fill: #33322E;font-weight:normal;">but don&apos;t want to generate separate diagrams for them.</text>
+  <path d="M13.5 670.5 L606.5 670.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <text x="21.5" y="692" style="fill: #33322E;font-weight:normal;">Here we import a file with no .nomnoml extension.</text>
+</svg>

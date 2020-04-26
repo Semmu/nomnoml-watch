@@ -1,0 +1,23 @@
+<svg version="1.1" baseProfile="full" width="650" height="145" viewbox="0 0 650 145" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="font-weight:bold; font-size:12pt; font-family:'Calibri', Helvetica, sans-serif;;stroke-width:3;stroke-linejoin:round;stroke-linecap:round">
+  <title >nomnoml</title>
+  <desc >[ Import inside this block |
+#.nomnomlwatchreaderror: fill=red visual=end
+      [&lt;nomnomlwatchreaderror&gt; -]
+     |
+    The other dot is an #import outside, in the global scope.
+]
+#.nomnomlwatchreaderror: fill=red visual=end
+      [&lt;nomnomlwatchreaderror&gt; -]
+    </desc>
+  <rect x="13.5" y="13.5" height="119" width="558" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="292.5" y="35" style="fill: #33322E;text-anchor: middle;">Import inside this block</text>
+  <path d="M13.5 44.5 L571.5 44.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <circle r="10.333333333333334" cx="39.5" cy="73" style="stroke:#33322E;fill:red;stroke-dasharray:none;"></circle>
+  <circle r="6.333333333333334" cx="39.5" cy="73" style="stroke:none; fill:#33322E;"></circle>
+  <text x="39.5" y="79" style="fill: #33322E;font-weight:normal;text-anchor: middle;">-</text>
+  <path d="M13.5 101.5 L571.5 101.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <text x="21.5" y="123" style="fill: #33322E;font-weight:normal;">The other dot is an #import outside, in the global scope.</text>
+  <circle r="10.333333333333334" cx="624.5" cy="73" style="stroke:#33322E;fill:red;stroke-dasharray:none;"></circle>
+  <circle r="6.333333333333334" cx="624.5" cy="73" style="stroke:none; fill:#33322E;"></circle>
+  <text x="624.5" y="79" style="fill: #33322E;font-weight:normal;text-anchor: middle;">-</text>
+</svg>

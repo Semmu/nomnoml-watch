@@ -1,0 +1,4 @@
+[ This nomnoml file has no .nomnoml extension |
+    Useful if you only want to include them in other diagrams,
+    but don't want to generate separate diagrams for them.
+]

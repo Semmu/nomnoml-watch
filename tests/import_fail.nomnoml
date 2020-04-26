@@ -1,0 +1,6 @@
+[ Import inside this block |
+    #import: missing.nomnoml |
+    The other dot is an #import outside, in the global scope.
+]
+
+#import: another_missing.nomnoml

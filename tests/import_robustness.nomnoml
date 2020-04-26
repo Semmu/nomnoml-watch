@@ -1,0 +1,24 @@
+[ Exhibit A | Import with whitespaces everywhere. |
+    #import:   block.nomnoml
+]
+
+[ Exhibit A ]->[ Exhibit B ]
+
+[ Exhibit B | Import without whitespaces anywhere. |
+#import:block.nomnoml
+]
+
+[ Exhibit B ]->[ Exhibit C ]
+
+[ Exhibit C | Import with additional stuff after it on the same line. |
+    #import: block.nomnoml |
+    The pipe character is on the same line as the import,
+    should result in a horizontal line above this sentence.
+]
+
+[ Exhibit C ]->[ Exhibit D ]
+
+[ Exhibit D |
+    #import: no_extension |
+    Here we import a file with no .nomnoml extension.
+]
