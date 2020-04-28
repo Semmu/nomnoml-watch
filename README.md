@@ -22,6 +22,15 @@
 * run `npx nomnoml-watch`
 
 
+## TODO / Planned features
+
+- [ ] add CLI argument parsing
+- [ ] then add `--import` depth argument
+- [ ] then add `--once` flag for one-off runs
+- [ ] build dependency/import graph of files
+- [ ] automatically re-compile files when imported files change
+
+
 ## Troubleshooting
 
 If you encounter issues, watch the command line output while `nomnoml-watch` is running.
