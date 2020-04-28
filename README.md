@@ -7,12 +7,13 @@
 
 ## More details
 
-`nomnoml` is a really cool tool to describe (UML) diagrams and generate images from them for visual representation.
+`nomnoml` is a really cool tool to describe (UML) diagrams in a simple text format and then generate images from them for visual representation.
 
-* It is available as an online, client-side tool here: http://www.nomnoml.com/
-* And also as an `npm` module here: https://www.npmjs.com/package/nomnoml
+* Check out the online, client-side tool here: http://www.nomnoml.com/
+* It is also open-source! https://github.com/skanaar/nomnoml
+* And available as an `npm` module: https://www.npmjs.com/package/nomnoml
 
-`nomnoml-watch` is a very simple program that watches `*.nomnoml` files in the current directory and automatically compiles them to SVG images on change.
+`nomnoml-watch` is a very simple program that watches `*.nomnoml` files in the current directory and automatically compiles them to SVG images on every change.
 
 
 ## Usage
