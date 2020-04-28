@@ -9,21 +9,25 @@ const { program } = require('commander');
 
 const this_package = require('./package.json'); // we need our own version
 
+const MAX_IMPORT_DEPTH_DEFAULT = 20;
+
 // setting up cli argument parsing
 program.version(this_package.version);
 program.option('-1, --once', 'run only once and then exit', false)
-       .option('-d, --import-depth <type>', 'maximum depth allowed when importing files', '20');
+       .option('-d, --import-depth <type>', 'maximum depth allowed when importing files', MAX_IMPORT_DEPTH_DEFAULT);
 
 program.parse(process.argv);
 
-// max import depth in nomnoml files
-const MAX_IMPORT_DEPTH = 20 // 20 should be enough i guess
+const MAX_IMPORT_DEPTH = isNaN(parseInt(program.importDepth)) ? MAX_IMPORT_DEPTH_DEFAULT : parseInt(program.importDepth);
+if (isNaN(parseInt(program.importDepth))) {
+  console.error(`Warning! Could not parse --import-depth parameter integer value. Using default value: ${MAX_IMPORT_DEPTH_DEFAULT}`.red)
+}
 
 function read_file(filename, depth) {
   const absolute_path = path.resolve(filename);
   console.log(`[depth=${depth}] Reading file '${absolute_path}'...`);
 
-  if (depth >= MAX_IMPORT_DEPTH) {
+  if (depth > MAX_IMPORT_DEPTH) {
     console.error(`[depth=${depth}] Maximum import depth reached, can't read file '${absolute_path}'!`.red);
     return `#.nomnomlwatchmaxdepth: fill=orange visual=end
       [<nomnomlwatchmaxdepth> -]
