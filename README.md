@@ -26,7 +26,7 @@
 
 ## TODO / Planned features
 
-- [ ] add CLI argument parsing
+- [x] add CLI argument parsing
 - [ ] then add `--import` depth argument
 - [ ] then add `--once` flag for one-off runs
 - [ ] build dependency/import graph of files

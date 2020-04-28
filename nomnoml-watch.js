@@ -5,6 +5,16 @@ const path = require('path');
 const nomnoml = require('nomnoml');
 const chokidar = require('chokidar');
 const colors = require('colors');
+const { program } = require('commander');
+
+const this_package = require('./package.json'); // we need our own version
+
+// setting up cli argument parsing
+program.version(this_package.version);
+program.option('-1, --once', 'run only once and then exit', false)
+       .option('-d, --import-depth <type>', 'maximum depth allowed when importing files', '20');
+
+program.parse(process.argv);
 
 // max import depth in nomnoml files
 const MAX_IMPORT_DEPTH = 20 // 20 should be enough i guess
