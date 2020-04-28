@@ -1,0 +1,14 @@
+#font: monospace
+
+[ <start> start]->[ <abstract> Maybe already have some .nomnoml files ]
+[ Maybe already have some .nomnoml files ]->[ Run `npx nomnoml-watch` ]
+[ start ]->[ Run `npx nomnoml-watch` ]
+
+[ Run `npx nomnoml-watch` ]->[ Design something great ]
+
+[ <frame> Design something great |
+  [ Create/edit .nomnoml files ]->[ Watch them automatically compile to SVG images ]
+  [ Watch them automatically compile to SVG images ]->[ Create/edit .nomnoml files ]
+]->[ Stop `npx nomnoml-watch` when done ]
+
+[ Stop `npx nomnoml-watch` when done ]->[<end> end ]

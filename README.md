@@ -4,6 +4,8 @@
 
 `npx` module to watch and automatically compile [`nomnoml`](http://www.nomnoml.com/) diagram files in the current directory.
 
+![usage flow](./flow.svg)
+
 
 ## More details
 

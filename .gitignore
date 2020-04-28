@@ -225,3 +225,6 @@ $RECYCLE.BIN/
 # for testing purposes i have some *.nomnoml files here
 *.nomnoml
 *.svg
+
+!flow.nomnoml
+!flow.svg

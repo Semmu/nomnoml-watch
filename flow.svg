@@ -1,0 +1,49 @@
+<svg version="1.1" baseProfile="full" width="574.5" height="538" viewbox="0 0 574.5 538" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="font-weight:bold; font-size:12pt; font-family:'monospace', Helvetica, sans-serif;;stroke-width:3;stroke-linejoin:round;stroke-linecap:round">
+  <title >nomnoml</title>
+  <desc >#font: monospace
+
+[ &lt;start&gt; start]-&gt;[ &lt;abstract&gt; Maybe already have some .nomnoml files ]
+[ Maybe already have some .nomnoml files ]-&gt;[ Run `npx nomnoml-watch` ]
+[ start ]-&gt;[ Run `npx nomnoml-watch` ]
+
+[ Run `npx nomnoml-watch` ]-&gt;[ Design something great ]
+
+[ &lt;frame&gt; Design something great |
+  [ Create/edit .nomnoml files ]-&gt;[ Watch them automatically compile to SVG images ]
+  [ Watch them automatically compile to SVG images ]-&gt;[ Create/edit .nomnoml files ]
+]-&gt;[ Stop `npx nomnoml-watch` when done ]
+
+[ Stop `npx nomnoml-watch` when done ]-&gt;[&lt;end&gt; end ]</desc>
+  <path d="M305 33 L204.5 63.5 L204.5 83.5 L204.5 83.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M199.2 70.2 L204.5 76.8 L209.8 70.2 L204.5 83.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M204.5 114.5 L204.5 134.5 L269.6 154.5 L269.6 154.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M255.3 155.7 L263.2 152.5 L258.4 145.5 L269.6 154.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M335 33 L435.5 63.5 L435.5 99 L435.5 99 L435.5 134.5 L435.5 134.5 L370.4 154.5 L370.4 154.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M381.6 145.5 L376.8 152.5 L384.7 155.7 L370.4 154.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M320 185.5 L320 205.5 L320 225.5 L320 225.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M314.7 212.2 L320 218.8 L325.3 212.2 L320 225.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M320 384.5 L320 404.5 L320 424.5 L320 424.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M314.7 411.2 L320 417.8 L325.3 411.2 L320 424.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M320 455.5 L320 475.5 L320 495.5 L320 495.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M314.7 482.2 L320 488.8 L325.3 482.2 L320 495.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <rect x="78.5" y="225.5" height="159" width="484" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="86.5" y="247" style="fill: #33322E;font-weight:normal;">Design something great</text>
+  <path d="M78.5 256.5 L295.5 256.5 L311 241 L311 225.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M311.8 300.5 L300.5 320.5 L311.8 340.5 L311.8 340.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M300.6 331.5 L308.5 334.7 L309.9 326.3 L311.8 340.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <path d="M329.2 340.5 L340.5 320.5 L329.2 300.5 L329.2 300.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+  <path d="M340.4 309.5 L332.5 306.3 L331.1 314.7 L329.2 300.5 Z" style="stroke:#33322E;fill:#33322E;stroke-dasharray:none;"></path>
+  <rect x="189.5" y="269.5" height="31" width="263" style="stroke:#33322E;fill:#fdf6e3;stroke-dasharray:none;"></rect>
+  <text x="321" y="291" style="fill: #33322E;text-anchor: middle;">Create/edit .nomnoml files</text>
+  <rect x="91.5" y="340.5" height="31" width="458" style="stroke:#33322E;fill:#fdf6e3;stroke-dasharray:none;"></rect>
+  <text x="320.5" y="362" style="fill: #33322E;text-anchor: middle;">Watch them automatically compile to SVG images</text>
+  <circle r="12" cx="320" cy="28.5" style="stroke:none; fill:#33322E;"></circle>
+  <rect x="13.5" y="83.5" height="31" width="382" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="204.5" y="105" style="fill: #33322E;font-weight:normal;font-style:italic;text-anchor: middle;">Maybe already have some .nomnoml files</text>
+  <rect x="202.5" y="154.5" height="31" width="235" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="320" y="176" style="fill: #33322E;text-anchor: middle;">Run `npx nomnoml-watch`</text>
+  <rect x="150.5" y="424.5" height="31" width="339" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+  <text x="320" y="446" style="fill: #33322E;text-anchor: middle;">Stop `npx nomnoml-watch` when done</text>
+  <circle r="10" cx="320" cy="510.5" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></circle>
+  <circle r="6" cx="320" cy="510.5" style="stroke:none; fill:#33322E;"></circle>
+</svg>
