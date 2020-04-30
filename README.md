@@ -2,7 +2,7 @@
 
 [![published npm version](https://img.shields.io/npm/v/nomnoml-watch?style=plastic)](https://www.npmjs.com/package/nomnoml-watch)
 
-`npx` module to watch and automatically compile [`nomnoml`](http://www.nomnoml.com/) diagram files in the current directory.
+`npx` package to watch and automatically compile [`nomnoml`](http://www.nomnoml.com/) diagram files in the current directory.
 
 ![usage flow](./flow.svg)
 
@@ -13,7 +13,7 @@
 
 * Check out the online, client-side tool here: http://www.nomnoml.com/
 * It is also open-source! https://github.com/skanaar/nomnoml
-* And available as an `npm` module: https://www.npmjs.com/package/nomnoml
+* And available as an `npm` package: https://www.npmjs.com/package/nomnoml
 
 `nomnoml-watch` is a very simple program that watches `*.nomnoml` files in the current directory and automatically compiles them to SVG images on every change.
 
