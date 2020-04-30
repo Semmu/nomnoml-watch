@@ -7,7 +7,7 @@
 ![usage flow](./flow.svg)
 
 
-## More details
+## Description
 
 `nomnoml` is a really cool tool to describe (UML) diagrams in a simple text format and then generate images from them for visual representation.
 
@@ -18,17 +18,30 @@
 `nomnoml-watch` is a very simple program that watches `*.nomnoml` files in the current directory and automatically compiles them to SVG images on every change.
 
 
-## Usage
+## Quick usage
 
-* have some `*.nomnoml` files in your current directory
-* run `npx nomnoml-watch`
+* Have some `*.nomnoml` files in your current directory.
+* Run `npx nomnoml-watch`!
+
+
+## Command line arguments
+
+```
+Usage: nomnoml-watch [options]
+
+Options:
+  -V, --version              output the version number
+  -1, --once                 run only once and then exit (default: false)
+  -d, --import-depth <type>  maximum depth allowed when importing external files (default: 20)
+  -h, --help                 display help for command
+```
 
 
 ## TODO / Planned features
 
 - [x] add CLI argument parsing
 - [x] then add `--import-depth` argument
-- [ ] then add `--once` flag for one-off runs
+- [x] then add `--once` flag for one-off runs
 - [ ] build dependency/import graph of files
 - [ ] automatically re-compile files when imported files change
 
