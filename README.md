@@ -1,6 +1,6 @@
 # nomnoml-watch
 
-![published npm version](https://img.shields.io/npm/v/nomnoml-watch?style=plastic)
+[![published npm version](https://img.shields.io/npm/v/nomnoml-watch?style=plastic)](https://www.npmjs.com/package/nomnoml-watch)
 
 `npx` module to watch and automatically compile [`nomnoml`](http://www.nomnoml.com/) diagram files in the current directory.
 
