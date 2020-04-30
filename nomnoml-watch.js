@@ -14,12 +14,14 @@ const MAX_IMPORT_DEPTH_DEFAULT = 20;
 // setting up cli argument parsing
 program.version(this_package.version);
 program.option('-1, --once', 'run only once and then exit', false)
-       .option('-d, --import-depth <type>', 'maximum depth allowed when importing files', MAX_IMPORT_DEPTH_DEFAULT);
+       .option('-d, --import-depth <type>', 'maximum depth allowed when importing external files', MAX_IMPORT_DEPTH_DEFAULT);
 
 program.parse(process.argv);
 
-const MAX_IMPORT_DEPTH = isNaN(parseInt(program.importDepth)) ? MAX_IMPORT_DEPTH_DEFAULT : parseInt(program.importDepth);
-if (isNaN(parseInt(program.importDepth))) {
+// sanitizing import depth parameter value
+const import_parameter_is_numeric = !isNaN(parseInt(program.importDepth));
+const MAX_IMPORT_DEPTH = import_parameter_is_numeric ? parseInt(program.importDepth) : MAX_IMPORT_DEPTH_DEFAULT;
+if (!import_parameter_is_numeric) {
   console.error(`Warning! Could not parse --import-depth parameter integer value. Using default value: ${MAX_IMPORT_DEPTH_DEFAULT}`.red)
 }
 
